@@ -9,6 +9,7 @@ Output file: Two files: wc_result.txt and med_result.txt will contain the word c
 
 To run the program:
 1. write **chmod a+x run.sh** 
+
 2. execute run.sh using **./run.sh**
 
 

@@ -1,0 +1,23 @@
+import string
+from collections import defaultdict
+
+wordsperline[]
+word_count = defaultdict(int) 
+
+with open('./../wc_input/readit.txt','r') as fp:
+	for line in fp:
+		x = line.lower().translate(None, string.punctuation).strip().split()		
+		for word in x:
+			word_count[word] +=1 
+		
+	keylist = word_count.keys()
+	keylist.sort()
+
+fp.close()
+
+f = open('../wc_output/wc_result.txt','w')	
+for index in keylist:
+	f.write('{}\t\t{}\n'.format(index, word_count[index]))
+	
+f.close()
+	
